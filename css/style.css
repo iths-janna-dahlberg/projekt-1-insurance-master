@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    height: 500px;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "blue1 orange2"
+    "blue1 yellow3";
+}
+
+.item1 {
+    grid-area:blue1;
+    
+}
+
+.item1 img {
+    height: 250px;
+    width: auto;
+}
+
+.item2 {
+    grid-area: orange2;
+    background-color: orange;
+}
+
+.item3 {
+    grid-area: yellow3;
+    background-color: yellow;
+}
