@@ -1,9 +1,11 @@
 body {
-    margin: 0;
+    margin: 0px;
+    background-color: #ebebeb;
 }
 
 .container {
-    width: 100%;
+    width: 1000px;
+    margin: 0px auto;
 }
 
 header {
@@ -58,7 +60,6 @@ main > article > p {
 
 .part1 {
     display: flex;
-
 }
 
 
@@ -95,8 +96,6 @@ main > article > p {
 
 .child-box img{
     width: 70px;
-
-
 }
 
 .just-box {
@@ -112,8 +111,6 @@ main > article > p {
 
 .just-box img{
     width: 75px;
-
-
 }
 
 .fart-box {
@@ -135,4 +132,37 @@ main > article > p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.rutor {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 333px 333px;
+}
+
+.rutor article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.rutor article h3 {
+    align-self: flex-start;
+}
+
+.rutor article:nth-of-type(2n) {
+    background-color: white;
+}
+
+.rutor article:first-of-type {
+    background-color: #c7ddea;
+}
+
+.rutor article:nth-of-type(3) {
+    background-color: #ebebeb;
+}
+
+.rutor article:nth-of-type(5) {
+    background-color: #f17949;
 }
