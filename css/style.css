@@ -8,18 +8,18 @@ body {
 
 header {
     height: 500px;
-    background-color: lightblue;
+    background-color: #c7ddea;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "blue1 orange2"
     "blue1 yellow3";
+    padding: 0px 0px 0px 80px;
 }
 
 .item1 {
     grid-area:blue1;
-    
 }
 
 .item1 img {
@@ -29,10 +29,38 @@ header {
 
 .item2 {
     grid-area: orange2;
-    background-color: orange;
+    background-color: #f17949;
 }
 
 .item3 {
     grid-area: yellow3;
-    background-color: yellow;
+    background-color: #fab131;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ebebeb;
+    padding: 25px 200px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background: linear-gradient(180deg, #a9a19e 50%, #fab131 50%);
+    padding: 0px 80px;
+}
+
+main:first-of-type article {
+    display: flex;
+    justify-content: center;
+}
+
+.rubrik {
+    width: 50%;
+}
+
+main > article > p {
+    width: 50%;
 }
