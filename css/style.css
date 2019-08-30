@@ -64,3 +64,21 @@ main:first-of-type article {
 main > article > p {
     width: 50%;
 }
+
+.card-article {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 0.5rem;
+}
+
+.child-box {
+    background-color: #c7ddea;
+}
