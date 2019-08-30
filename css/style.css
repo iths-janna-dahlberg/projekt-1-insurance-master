@@ -52,23 +52,23 @@ main {
     padding: 0px 80px;
 }
 
-main:first-of-type article {
-    display: flex;
-    justify-content: center;
-}
-
-.rubrik {
+main > article > p {
     width: 50%;
 }
 
-main > article > p {
+.part1 {
+    display: flex;
+
+}
+
+
+.rubrik {
     width: 50%;
 }
 
 .card-article {
     display: flex;
     justify-content: space-around;
-
 }
 
 .card {
@@ -77,8 +77,62 @@ main > article > p {
     height: 300px;
     margin: 10px;
     border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .child-box {
     background-color: #c7ddea;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 0.3rem;
+    margin-top: -20px;
+}
+
+.child-box img{
+    width: 70px;
+
+
+}
+
+.just-box {
+    background-color: #fab131;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 0.3rem;
+    margin-top: -20px;
+}
+
+.just-box img{
+    width: 75px;
+
+
+}
+
+.fart-box {
+    background-color: #f17949;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 0.3rem;
+    margin-top: -20px;
+}
+
+.fart-box img{
+    width: 110px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
