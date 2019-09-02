@@ -50,7 +50,7 @@ button {
 
 /*************** HEADER ****************/
 
-header {
+header.index {
     background-color: #c7ddea;
     display: grid;
     grid-template-columns: 1fr 1fr;
