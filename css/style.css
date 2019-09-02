@@ -47,6 +47,9 @@ button {
     margin: 0px auto;
 }
 
+
+/*************** HEADER ****************/
+
 header {
     background-color: #c7ddea;
     display: grid;
@@ -106,14 +109,45 @@ header {
     margin: 0 0 5px 0;
 }
 
+header.contact {
+    background-color: #c7ddea;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+
+/************* NAVIGATION ************/
+
 nav {
     display: flex;
     justify-content: space-around;
     background-color: #ebebeb;
     padding: 25px 200px;
+    
 }
 
-main {
+nav a {
+    font-family: 'Fira Sans', sans-serif;
+    color: #a9a19e;
+    text-decoration: none;
+}
+
+nav a:active,
+nav a:hover {
+    color: #000000
+
+}
+
+nav a.current {
+    color: #000000;
+}
+
+
+
+/************* MAIN ****************/
+
+main.index {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -201,6 +235,15 @@ main > article > p {
     align-items: center;
 }
 
+main.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background-color:  #a9a19e ;
+    padding: 0px 130px;
+}
+/************ SECTION RUTOR ************/
+
 .rutor {
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
@@ -234,6 +277,8 @@ main > article > p {
     background-color: #f17949;
 }
 
+
+
 .toplink {
     background-color: #a9a19e;
     padding: 25px 200px;
@@ -243,6 +288,9 @@ main > article > p {
 .toplink p {
     margin:0;
 }
+
+
+/***************** FOOTER *************/
 
 footer {
     background-color: #777574;
