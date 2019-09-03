@@ -371,7 +371,7 @@ footer {
 .sign-up {
     display: flex;
     background-color: #a9a19e;
-    padding: 130px 130px 0px 130px;
+    padding: 130px 130px 130px 130px;
 }
 
 .left {
@@ -411,3 +411,35 @@ textarea {
 form p {
     margin: 20px 0 0 0;
 }
+
+.map {
+    background-image: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
+    padding: 40px 0 0 80px;
+
+
+}
+
+.orange-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fab131;
+    width: 350px;
+    height: 130px;
+    padding: 20px;
+    
+}
+
+.orange-box h1 {
+    text-align: center;
+}
+.orange-box p:first-of-type {
+    margin: 10px 0 0 20px;
+}
+
+.orange-box p:nth-of-type(2) {
+    margin: 0 0 0 20px;
+}
+
