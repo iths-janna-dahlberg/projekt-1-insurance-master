@@ -117,14 +117,6 @@ header button {
     margin: 0 0 5px 0;
 }
 
-header.contact {
-    background-color: #c7ddea;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-}
-
-
 /************* NAVIGATION ************/
 
 nav {
@@ -135,10 +127,14 @@ nav {
     
 }
 
-nav a {
+.top-nav a {
     font-family: 'Fira Sans', sans-serif;
     color: #a9a19e;
     text-decoration: none;
+}
+
+.toplink a{
+    color: black;
 }
 
 nav a:active,
@@ -151,6 +147,9 @@ nav a.current {
     color: #000000;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 /************* MAIN ****************/
@@ -165,7 +164,11 @@ main.index {
 
 
 main > article > p {
-    width: 50%;
+    width: 45%;
+}
+
+.rubrik {
+    width: 55%;
 }
 
 .part1 {
@@ -175,11 +178,6 @@ main > article > p {
 .part1 p {
     margin-right: 50px;
     margin-left: 100px;
-}
-
-
-.rubrik {
-    width: 50%;
 }
 
 .card-article {
@@ -263,13 +261,6 @@ main > article > p {
     width: 60%;
 }
 
-main.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    background-color:  #a9a19e ;
-    padding: 0px 130px;
-}
 /************ SECTION RUTOR ************/
 
 .rutor {
@@ -309,16 +300,13 @@ main.contact {
 .card-head h2 {
     font-size: 1.8rem;
     margin: 20px;
-    color: #777574;    
+    color: rgba(0,0,0,0.5);    
 }
 
 .card-body p {
     color: #000000;
     text-align: center;
     margin: 0 50px;
-    
-
-
 }
 
 .rutor article:nth-of-type(2n) {
@@ -337,22 +325,89 @@ main.contact {
     background-color: #f17949;
 }
 
-
-
 .toplink {
     background-color: #a9a19e;
-    padding: 25px 200px;
+    padding: 20px 200px;
 }
 
-  
 .toplink p {
     margin:0;
+    color:black;
 }
 
+.toplink a {
+    text-align: center;
+}
+
+ion-icon {
+    font-size: 2rem;
+    margin: 0px;
+}
 
 /***************** FOOTER *************/
 
 footer {
-    background-color: #777574;
+    background-color: #a9a19e;
     height: 300px;
+}
+
+/***************** CONTACT PAGE *************/
+
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:400px;
+    background-color: #c7ddea;
+    background-image: url(../images/adult2.png);
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+    background-position-y: 100%;
+    background-position-x: 90%;
+    
+}
+
+.sign-up {
+    display: flex;
+    background-color: #a9a19e;
+    padding: 130px 130px 0px 130px;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    resize: none;
+    border-radius: 4px;
+}
+
+.right button {
+    /* justify-content: flex-end; */
+    align-self: flex-end;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+form p {
+    margin: 20px 0 0 0;
 }
