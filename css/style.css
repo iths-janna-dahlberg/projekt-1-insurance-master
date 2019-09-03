@@ -281,12 +281,44 @@ main.contact {
 .rutor article {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+    
 }
 
-.rutor article h3 {
-    align-self: flex-start;
+.ruta1 {
+    align-items: center;
+    justify-content: center; 
+}
+
+.ruta1 h1 {
+    text-align: center;
+    margin: 0 50px;
+}
+
+.card-head {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+
+}
+.card-head h2 {
+    font-size: 1.8rem;
+    margin: 20px;
+    color: #777574;    
+}
+
+.card-body p {
+    color: #000000;
+    text-align: center;
+    margin: 0 50px;
+    
+
+
 }
 
 .rutor article:nth-of-type(2n) {
